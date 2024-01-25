@@ -12,7 +12,7 @@ Download the code (or, clone the repo, you savvy dog) and run buildApp.sh. If th
 
 THIS WILL INSTALL HOMEBREW IF IT'S NOT ALREADY PRESENT!
 
-The script will produce a .app file in the working directory.
+The script will produce a .app file in the working directory, using a user supplied copy of the game. The installer is currently set to look for a rip of the US rom, placed in the directory and named baserom.us.z64
 
 #### Save and configuration files can be located at ~/Library/Application Support/mariarm/
 
