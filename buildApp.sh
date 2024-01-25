@@ -1,16 +1,26 @@
 #!/bin/bash
 
+which -s brew
+if [[ $? != 0 ]] ; then
+    # Install Homebrew
+    echo "Brew not detected, attempting install..."
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+    echo "Brew is installed!"
+fi
 brew update
+echo "Installing dependencies..."
 brew install coreutils make pkg-config tehzz/n64-dev/mips64-elf-binutils glew glfw mingw-w64
-rm -rf Mariarm.app
-mkdir -p Mariarm.app/Contents/MacOS/
+rm -rf MariARM64.app
+mkdir -p MariARM64.app/Contents/MacOS/
 gmake clean
+echo "Building from EN_US rom..."
 gmake VERSION=us
 chmod -R 755 build/us_pc/*
 mv build/us_pc/sm64.us.f3dex2e build/us_pc/sm64excore
-mv build/us_pc/* Mariarm.app/Contents/MacOS/
-mkdir Mariarm.app/Contents/Resources
-cp ma.icns Mariarm.app/Contents/Resources/
-cp Info.plist Mariarm.app/Contents/
-chmod 755 Mariarm.app
+mv build/us_pc/* MariARM64.app/Contents/MacOS/
+mkdir MariARM64.app/Contents/Resources
+cp ma.icns MariARM64.app/Contents/Resources/
+cp Info.plist MariARM64.app/Contents/
+chmod 755 MariARM64.app
 

@@ -1,3 +1,9 @@
+Added app builder and tweaked settings to allow for retina ARM macOS Builds
+
+
+
+PRE-FORK:
+
 Refresh 11
 1.) (HEAD -> master, origin/master, origin/HEAD) Make geo_process_level_of_detail endian-independent (#1049)
 2.) Label oMoveFlags and slight cleanup. (#1046)
