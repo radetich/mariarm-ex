@@ -10,7 +10,7 @@ else
 fi
 brew update
 echo "Installing dependencies..."
-brew install coreutils make pkg-config tehzz/n64-dev/mips64-elf-binutils glew glfw mingw-w64
+brew install coreutils make pkg-config tehzz/n64-dev/mips64-elf-binutils glew glfw mingw-w64 sdl2
 rm -rf MariARM64.app
 mkdir -p MariARM64.app/Contents/MacOS/
 gmake clean
