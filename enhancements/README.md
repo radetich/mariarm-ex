@@ -22,4 +22,4 @@ This allows the game to be rendered at 60 FPS instead of 30 FPS by interpolation
 
 The Mario head intro is the only exception which is still rendered at 30 FPS.
 
-This is the 60fps patch from [sm64-port](https://github.com/sm64-port/sm64-port/tree/master/enhancements) adapted for sm64ex.
+This is the 60fps patch from [sm64-port](https://github.com/sm64-port/sm64-port/tree/master/enhancements) adapted for sm64ex, and then for mariarm64.
