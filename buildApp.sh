@@ -10,4 +10,4 @@ gmake
 mv build/us_pc Mariarm
 mv Mariarm/sm64.us.f3dex2e Mariarm/Mariarm
 mv Mariarm Mariarm.app
-cp Icon? Mariarm/
+cp "Icon\r" Mariarm/
