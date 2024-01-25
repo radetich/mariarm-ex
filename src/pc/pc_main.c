@@ -197,13 +197,7 @@ void main_func(void) {
     #error No window API!
     #endif
 
-    #if defined(RAPI_D3D11)
-    rendering_api = &gfx_direct3d11_api;
-    # define RAPI_NAME "DirectX 11"
-    #elif defined(RAPI_D3D12)
-    rendering_api = &gfx_direct3d12_api;
-    # define RAPI_NAME "DirectX 12"
-    #elif defined(RAPI_GL) || defined(RAPI_GL_LEGACY)
+    #if defined(RAPI_GL) || defined(RAPI_GL_LEGACY)
     rendering_api = &gfx_opengl_api;
     # ifdef USE_GLES
     #  define RAPI_NAME "OpenGL ES"
@@ -215,7 +209,7 @@ void main_func(void) {
     #endif
 
     char window_title[96] =
-    "Super Mario 64 EX (" RAPI_NAME ")"
+    "Mariarm (Super Mario 64 Mac Wrapper - Rendering with " RAPI_NAME ")"
     #ifdef NIGHTLY
     " nightly " GIT_HASH
     #endif
