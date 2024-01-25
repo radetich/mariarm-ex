@@ -7,7 +7,6 @@ mkdir -p Mariarm.app/Contents/MacOS/
 gmake clean
 gmake VERSION=us
 chmod -R 755 build/us_pc/*
-chmod -R 755 run.sh
 mv build/us_pc/sm64.us.f3dex2e build/us_pc/sm64excore
 mv build/us_pc/* Mariarm.app/Contents/MacOS/
 mkdir Mariarm.app/Contents/Resources
