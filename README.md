@@ -1,5 +1,7 @@
-# sm64ex
-Fork of [sm64-port/sm64-port](https://github.com/sm64-port/sm64-port) with additional features. 
+# MariARM64 -> an app wrapper for Super Mario 64 for M-Series Macs!
+
+N.B. This is mostly not my work, I only wrote the .app creator script. The people below, and everyone in between, are the real heroes.
+Downstream of [sm64pc/sm64ex](https://github.com/sm64pc/sm64ex), which is itself (far) downstream of [n64decomp/sm64](https://github.com/n64decomp/sm64)
 
 Feel free to report bugs and contribute, but remember, there must be **no upload of any copyrighted asset**. 
 Run `./extract_assets.py --clean && make clean` or `make distclean` to remove ROM-originated content.
