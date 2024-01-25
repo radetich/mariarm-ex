@@ -16,8 +16,8 @@ mkdir -p MariARM64.app/Contents/MacOS/
 gmake clean
 echo "Building from EN_US rom..."
 gmake VERSION=us
-chmod -R 755 build/us_pc/*
-mv build/us_pc/sm64.us.f3dex2e build/us_pc/sm64excore
+chmod 755 build/us_pc/sm64.us.f3dex2e
+mv build/us_pc/sm64.us.f3dex2e build/us_pc/MariARM64
 mv build/us_pc/* MariARM64.app/Contents/MacOS/
 mkdir MariARM64.app/Contents/Resources
 cp ma.icns MariARM64.app/Contents/Resources/

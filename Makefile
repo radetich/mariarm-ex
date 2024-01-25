@@ -165,11 +165,9 @@ TARGET := sm64.$(VERSION)
 VERSION_CFLAGS := -D$(VERSION_DEF) -D_LANGUAGE_C
 VERSION_ASFLAGS := --defsym $(VERSION_DEF)=1
 
-# Stuff for showing the git hash in the intro on nightly builds
-# From https://stackoverflow.com/questions/44038428/include-git-commit-hash-and-or-branch-name-in-c-c-source
-ifeq ($(shell git rev-parse --abbrev-ref HEAD),nightly)
+ifeq ($(shell git rev-parse --abbrev-ref HEAD),mac-builder)
   GIT_HASH := $(shell git rev-parse --short HEAD)
-  VERSION_CFLAGS += -DNIGHTLY -DGIT_HASH="\"$(GIT_HASH)\""
+  VERSION_CFLAGS += -DMAC -DGIT_HASH="\"$(GIT_HASH)\""
 endif
 
 # Microcode

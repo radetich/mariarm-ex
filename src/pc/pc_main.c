@@ -209,9 +209,9 @@ void main_func(void) {
     #endif
 
     char window_title[96] =
-    "Mariarm (Super Mario 64 Mac Wrapper - Rendering with " RAPI_NAME ")"
-    #ifdef NIGHTLY
-    " nightly " GIT_HASH
+    "MariARM64 (Super Mario 64 Mac Wrapper - sm64ex core backend on " RAPI_NAME ")"
+    #ifdef gitty
+    " @ commit " GIT_HASH
     #endif
     ;
 
